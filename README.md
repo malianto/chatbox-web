@@ -212,6 +212,35 @@ Any form of contribution is welcome, including but not limited to:
 
 ## Build Instructions
 
+### Web Application
+
+#### Prerequisites
+- Docker installed on your system
+- At least 2GB of free RAM for development build
+- Port 3000 available on your machine
+
+#### Steps
+1. Clone the repository from Github
+```bash
+git clone https://github.com/malianto/chatbox-web chatbox
+cd chatbox
+```
+
+2. Build the Docker image
+```bash 
+docker build -t chatbox-web .
+```
+
+3. Run the application
+```bash
+docker run -p 3000:3000 chatbox-web
+```
+
+4. Done!
+   Visit your web app at http://localhost:3000
+
+### Standalone Application
+
 1. Clone the repository from Github
 
 ```bash
